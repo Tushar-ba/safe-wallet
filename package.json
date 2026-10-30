@@ -1,0 +1,21 @@
+{
+  "name": "safe-multisig-amoy",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test test/registry.test.ts",
+    "test:fork": "FORK=1 hardhat test test/fork.test.ts",
+    "deploy:fork": "FORK=1 hardhat run scripts/deploy.ts",
+    "deploy:amoy": "hardhat run scripts/deploy.ts --network amoy"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@safe-global/safe-deployments": "^1.37.66",
+    "@types/node": "^26.6.6",
+    "dotenv": "^18.0.9",
+    "hardhat": "^2.29.1",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.6"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Force D:\\\\gnosis-safe-wallet | Select-Object Name,Length,Mode; \\(Get-Item D:\\\\gnosis-safe-wallet\\\\Claude.md\\).Length)"
+    ]
+  }
+}
